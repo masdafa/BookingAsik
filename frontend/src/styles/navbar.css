@@ -1,0 +1,84 @@
+/* --------------------------------------------
+   THEME VARIABLES
+-------------------------------------------- */
+:root {
+  --navbar-bg: #226fff7e;
+  --text: #cbcbcb;
+  --text-light: #f53f3f;
+  --hover-bg: rgba(17, 17, 17, 0.05);
+  --shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+[data-theme="dark"] {
+  --navbar-bg: #1c1c1c;
+  --text: #f1f1f1;
+  --text-light: #bbb;
+  --hover-bg: rgba(255, 255, 255, 0.1);
+  --shadow: 0 2px 8px rgba(255,255,255,0.08);
+}
+
+/* --------------------------------------------
+   NAVBAR ROOT
+-------------------------------------------- */
+.MuiAppBar-root {
+  background: var(--navbar-bg) !important;
+  color: var(--text) !important;
+  box-shadow: var(--shadow) !important;
+  transition: 0.3s ease;
+}
+
+/* --------------------------------------------
+   NAVBAR TITLE (Brand)
+-------------------------------------------- */
+.MuiTypography-root {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+/* --------------------------------------------
+   MENU ITEMS
+-------------------------------------------- */
+.MuiButton-root {
+  text-transform: none !important;
+  font-size: 15px;
+  margin-right: 10px;
+  font-weight: 500;
+  color: var(--text) !important;
+  border-radius: 8px !important;
+  padding: 6px 14px !important;
+  transition: 0.2s ease-in-out;
+}
+
+.MuiButton-root:hover {
+  background: var(--hover-bg) !important;
+}
+
+/* --------------------------------------------
+   THEME TOGGLE BUTTON
+-------------------------------------------- */
+.MuiIconButton-root {
+  color: var(--text) !important;
+  padding: 8px !important;
+  border-radius: 10px !important;
+  transition: 0.2s ease-in-out;
+}
+
+.MuiIconButton-root:hover {
+  background: var(--hover-bg) !important;
+}
+
+/* --------------------------------------------
+   RESPONSIVE FIX
+-------------------------------------------- */
+@media (max-width: 768px) {
+  .MuiToolbar-root {
+    flex-direction: column;
+    padding: 10px 0 !important;
+    gap: 10px;
+  }
+
+  .MuiButton-root {
+    margin-right: 0;
+  }
+}

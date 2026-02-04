@@ -1,0 +1,306 @@
+export default {
+    translation: {
+        // Navigation
+        "home": "ホーム",
+        "hotels": "ホテル",
+        "deals": "お得情報",
+        "my_bookings": "予約一覧",
+        "wishlist": "ウィッシュリスト",
+
+        // Hero Section
+        "find_your_perfect_stay": "理想の宿泊先を見つけよう",
+        "best_hotels_verified_reviews": "厳選ホテル、検証済みレビュー、即時予約があなたの手の中に",
+
+        // Search
+        "search_hotels_or_destinations": "ホテルや目的地を検索...",
+        "destination": "目的地",
+        "check_in": "チェックイン",
+        "check_out": "チェックアウト",
+        "guests": "宿泊者",
+        "search": "検索",
+
+        // Popular Destinations
+        "popular_destinations": "人気の目的地",
+        "all_destinations": "すべての目的地",
+
+        // Best Deals
+        "best_deals": "ベストディール",
+        "best_deal": "ベストディール",
+
+        // Hotel Card
+        "per_night": "1泊",
+        "view_deal": "詳細を見る",
+        "free_wifi": "無料WiFi",
+        "breakfast": "朝食",
+        "pool": "プール",
+
+        // Reviews
+        "guest_reviews": "ゲストレビュー",
+        "write_review": "レビューを書く",
+        "no_reviews_yet": "まだレビューがありません。最初のレビューを書いてください！",
+
+        // Loyalty Program
+        "points": "ポイント",
+        "current_level": "現在のレベル",
+        "member": "メンバー",
+        "points_to_next_level": "次のレベルまで",
+        "your_benefits": "あなたの特典",
+        "redeem_rewards": "リワード交換",
+
+        // Availability
+        "no_rooms_available": "空室なし",
+        "limited_availability": "残りわずか",
+        "rooms_available": "空室あり",
+        "rooms_left": "室残り！今すぐ予約して滞在を確保しましょう。",
+
+        // Social Proof
+        "just_booked": "予約されました！",
+        "booked": "予約済み",
+
+        // Travel Assistant
+        "travel_assistant": "旅行アシスタント",
+        "hello_travel_assistant": "こんにちは！私はあなたの旅行アシスタントです。理想のホテル探しをお手伝いします。",
+
+        // Common
+        "loading": "読み込み中...",
+        "no_hotels_found": "ホテルが見つかりません",
+        "try_adjusting_filters": "検索条件を調整してみてください",
+
+        // Missing Keys
+        "login": "ログイン",
+        "logout": "ログアウト",
+        "sort_by": "並び順",
+        "price_range": "価格帯",
+        "popular_hotels": "人気ホテル",
+        "hotels_found": "件のホテル",
+
+        // Loyalty Home
+        "your_loyalty_status": "ロイヤルティステータス",
+        "see_detail": "詳細を見る",
+        "points_available_desc": "割引とリワードに利用可能なポイント。",
+        "hotel_in_destination": "目的地のホテル",
+
+        // Feature: Reviews
+        "stars": "つ星",
+        "share_experience_placeholder": "体験を共有...",
+        "submit_review": "レビューを送信",
+        "submitting": "送信中...",
+        "recent_reviews": "最新レビュー",
+        "anonymous": "匿名",
+
+        // Feature: Availability
+        "last_updated": "最終更新:",
+        "room_types_availability": "客室タイプ別空室状況:",
+        "left": "残り",
+
+        // Home Page Specific
+        "search_button": "検索",
+        "filter_all": "すべて",
+        "price_range_label": "価格帯:",
+        "sort_by_label": "並び順",
+        "sort_popular": "人気順",
+        "sort_price_low": "価格: 低い順",
+        "sort_price_high": "価格: 高い順",
+        "sort_name": "名前: A〜Z",
+        "flash_deals_title": "⚡ フラッシュセール！",
+        "popular_destinations_icon": "人気の目的地 📍",
+        "hotel_in_destination_icon": "目的地のホテル 🗺️",
+        "save_badge": "お得",
+        "night": "/泊",
+        "reviews_count": "件のレビュー",
+
+        // Login Page
+        "welcome_back_title": "おかえりなさい",
+        "login_subtitle": "続けるにはログインしてください",
+        "email_label": "メールアドレス",
+        "password_label": "パスワード",
+        "login_button": "ログイン",
+        "logging_in": "ログイン中...",
+        "create_account_button": "アカウント作成",
+        "back_to_home": "← ホームに戻る",
+        "error_email_password_required": "メールとパスワードは必須です",
+        "error_login_failed": "ログインに失敗しました。メールまたはパスワードが無効です。",
+
+        // Register Page
+        "all_fields_required": "すべての項目は必須です",
+        "account_created_success": "アカウントが作成されました！",
+        "register_failed": "登録に失敗しました",
+        "back": "戻る",
+        "create_account_title": "アカウント作成",
+        "create_account_subtitle": "新しいアカウントを作成するには登録してください",
+        "full_name_label": "氏名",
+        "signup_button": "登録",
+        "creating": "作成中...",
+        "already_have_account": "すでにアカウントをお持ちですか？ログイン",
+
+        // Hotel Detail
+        "hotel_not_found": "ホテルが見つかりません",
+        "coordinates_available": "座標あり",
+        "flash_sale": "フラッシュセール",
+        "remove_from_favorite": "お気に入りから削除",
+        "add_to_favorite": "お気に入りに追加",
+        "share": "共有",
+        "link_copied": "リンクをコピーしました",
+        "hotel_removed_favorite": "お気に入りから削除しました",
+        "hotel_saved_favorite": "お気に入りに追加しました",
+        "share_text": "{{city}}の{{hotelName}}をチェック",
+        "guest_reviews_count": "件のゲストレビュー",
+        "rating_label": "評価",
+        "normal_price": "通常価格",
+        "save_percentage": "お得",
+        "per_night_tax": "1泊 (税・サービス料込み)",
+        "free_cancellation": "24時間前まで無料キャンセル",
+        "breakfast_wifi_included": "朝食・WiFi込み",
+        "book_now_button": "今すぐ予約",
+        "description_title": "説明",
+        "read_more": "続きを読む",
+        "show_less": "折りたたむ",
+        "featured_facilities": "主な設備",
+        "location_title": "所在地",
+        "coordinates_not_available": "座標が利用できないため、都市に基づいた地図を表示しています。",
+        "guest_reviews_title": "ゲストレビュー",
+        "other_hotels_in": "その他のホテル",
+
+        // Booking Page
+        "guest_details": "ゲスト詳細",
+        "guest_information": "ゲスト情報",
+        "select_payment_method": "支払い方法を選択",
+        "review_booking": "予約確認",
+        "confirmation": "確認",
+        "pay_now": "今すぐ支払う",
+        "you_will_earn": "獲得ポイント",
+        "booking_ready_msg": "予約詳細の準備ができました。支払い前にご確認ください。",
+        "complete_booking_details": "予約詳細を入力",
+        "booking_successful": "予約が完了しました。ありがとうございます！",
+        "booking_failed": "予約の作成中にエラーが発生しました。",
+        "booking_failed_client": "予約をデータベースに保存できませんでした。（ローカルに保存済み）",
+        "please_complete_data": "予約詳細を正しく入力してください。",
+        "processing": "処理中...",
+        "pay_with": "{{method}}で{{amount}}を支払う",
+        "complete_data_to_pay": "支払いデータを入力",
+        "booking_summary": "予約概要",
+        "price_per_night": "1泊料金",
+        "nights": "泊",
+        "rooms": "室",
+        "payment_method": "支払い方法",
+        "total_estimated": "合計（概算）",
+        "total_estimation_note": "* 1泊料金、宿泊数（{{nights}}泊）、部屋数（{{rooms}}室）に基づく概算合計。",
+        "validation_name": "氏名は必須です",
+        "validation_email": "メールアドレスは必須です",
+        "validation_checkin": "チェックイン日は必須です",
+        "validation_checkout": "チェックアウト日は必須です",
+        "validation_checkout_after": "チェックアウト日はチェックイン日より後でなければなりません",
+        "validation_rooms": "最低1室",
+        "room_count_label": "部屋数",
+        "room_count_helper": "予約する部屋数（最低1室）",
+
+        // Deals Page
+        "special_deals_title": "特別オファー 🎉",
+        "special_deals_subtitle": "あなたのための限定オファーと期間限定プロモーション。",
+        "tab_all_deals": "すべてのオファー",
+        "tab_flash_sales": "フラッシュセール",
+        "tab_package_deals": "パッケージ",
+        "tab_last_minute": "直前割引",
+        "offers_count": "件のオファー",
+        "no_deals_available": "現在オファーはありません。後ほど再度ご確認ください！",
+
+        // Favorites Page
+        "my_favorites": "お気に入り",
+        "no_favorites": "お気に入りはまだありません",
+        "save_favorites_desc": "ホテル詳細ページからお気に入りを保存して、後で比較または予約できます。",
+        "explore_hotels": "ホテルを探す",
+        "see_details": "詳細を見る",
+        "remove_button_label": "削除",
+
+        // Profile Page
+        "user_profile": "ユーザープロフィール",
+        "admin_role_label": "管理者",
+        "regular_user_label": "一般ユーザー",
+        "edit_profile": "プロフィール編集",
+        "logout_account": "ログアウト",
+        "loyalty_program_status": "ロイヤルティプログラムとステータス",
+        "your_level": "あなたのレベル",
+        "points_balance": "ポイント残高",
+        "see_loyalty_details": "ロイヤルティ詳細を見る",
+        "quick_account_actions": "クイックアクション",
+        "view_booking_history": "予約履歴を見る",
+        "check_favorites": "お気に入りを確認",
+        "search_latest_deals": "最新オファーを検索",
+        "quick_logout": "クイックログアウト",
+
+        // Search Results Page
+        "search_results_title": "検索結果",
+        "filters_title": "フィルター",
+        "amenities_label": "設備",
+        "sort_rating": "評価が高い順",
+
+        // Your Booking Page
+        "your_booking_title": "予約詳細",
+        "no_bookings_found": "予約が見つかりません。",
+        "print_pdf_summary": "PDF概要を印刷",
+        "booking_method_label": "支払い方法",
+        "booking_total_label": "合計",
+
+        // Footer
+        "footer_company_name": "BookingAsik.com",
+        "footer_company_desc": "インドネシアで信頼されるホテル予約プラットフォーム。最高の価格、検証済みレビュー、簡単で安全な予約プロセスで何千ものホテルオプションを提供しています。",
+        "footer_company_section": "会社",
+        "footer_about_us": "会社概要",
+        "footer_careers": "採用情報",
+        "footer_blog": "ブログ",
+        "footer_press": "プレス",
+        "footer_partners": "パートナー",
+        "footer_support_section": "サポート",
+        "footer_help_center": "ヘルプセンター",
+        "footer_faq": "よくある質問",
+        "footer_privacy_policy": "プライバシーポリシー",
+        "footer_terms": "利用規約",
+        "footer_security": "セキュリティ",
+        "footer_contact_section": "お問い合わせ",
+        "footer_office_address": "オフィス住所",
+        "footer_address_line1": "Jl. Sudirman No. 123, 15階",
+        "footer_address_line2": "ジャカルタ中央 10220, インドネシア",
+        "footer_phone": "電話",
+        "footer_email": "メール",
+        "footer_hours": "営業時間",
+        "footer_weekday_hours": "月〜金: 08:00 - 22:00",
+        "footer_weekend_hours": "土〜日: 09:00 - 21:00",
+        "footer_copyright": "無断転載禁止。",
+        "footer_cookie_policy": "Cookieポリシー",
+        "footer_service_terms": "サービス規約",
+
+        // Attractions
+        "attractions": "観光スポット",
+        "attractions_hero_title": "素晴らしい観光スポットを探索",
+        "attractions_hero_subtitle": "インドネシアの美しい目的地を発見し、冒険を予約しましょう",
+        "attractions_search_placeholder": "観光スポット、都市、アクティビティを検索...",
+        "attractions_filter_city": "都市で絞り込み",
+        "attractions_filter_category": "カテゴリ",
+        "attractions_found": "{{count}}件の観光スポット",
+        "no_attractions_found": "観光スポットが見つかりません",
+        "attraction_category_temple": "寺院",
+        "attraction_category_nature": "自然",
+        "attraction_category_heritage": "遺産",
+        "attraction_category_culture": "文化",
+        "attraction_category_landmark": "ランドマーク",
+        "attraction_category_theme_park": "テーマパーク",
+        "attraction_category_beach": "ビーチ",
+        "attraction_category_adventure": "アドベンチャー",
+        "attraction_free_entry": "入場無料",
+        "attraction_view_details": "詳細を見る",
+        "attraction_not_found": "観光スポットが見つかりません",
+        "attraction_removed_favorite": "お気に入りから削除しました",
+        "attraction_saved_favorite": "お気に入りに追加しました",
+        "attraction_top_rated": "高評価",
+        "attraction_duration": "所要時間",
+        "attraction_opening_hours": "営業時間",
+        "attraction_amenities": "施設・サービス",
+        "attraction_book_ticket": "チケットを予約",
+        "attraction_per_person": "1人あたり",
+        "attraction_visit_date": "訪問日",
+        "attraction_select_date": "日付を選択",
+        "attraction_ticket_count": "チケット枚数",
+        "attraction_subtotal": "小計",
+        "attraction_login_to_book": "この観光スポットを予約するにはログインしてください"
+    }
+};

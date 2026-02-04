@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.79742e02.css",
+    "main.js": "/static/js/main.2d6904af.js",
+    "static/js/977.0954fada.chunk.js": "/static/js/977.0954fada.chunk.js",
+    "static/js/455.81146664.chunk.js": "/static/js/455.81146664.chunk.js",
+    "static/media/rhino_sunda.png": "/static/media/rhino_sunda.ab02bf977f9718647b26.png",
+    "static/media/orangutan.png": "/static/media/orangutan.e952c218b597008b3491.png",
+    "static/media/company_logo_icon.png": "/static/media/company_logo_icon.c091b61f7bba79e71b57.png",
+    "index.html": "/index.html",
+    "main.79742e02.css.map": "/static/css/main.79742e02.css.map",
+    "main.2d6904af.js.map": "/static/js/main.2d6904af.js.map",
+    "977.0954fada.chunk.js.map": "/static/js/977.0954fada.chunk.js.map",
+    "455.81146664.chunk.js.map": "/static/js/455.81146664.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79742e02.css",
+    "static/js/main.2d6904af.js"
+  ]
+}

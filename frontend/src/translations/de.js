@@ -1,0 +1,308 @@
+export default {
+    translation: {
+        // Navigation
+        "home": "Startseite",
+        "hotels": "Hotels",
+        "deals": "Angebote",
+        "my_bookings": "Meine Buchungen",
+        "wishlist": "Wunschliste",
+
+        // Hero Section
+        "find_your_perfect_stay": "Finden Sie Ihren perfekten Aufenthalt",
+        "best_hotels_verified_reviews": "Die besten Hotels, verifizierte Bewertungen und sofortige Buchung",
+
+        // Search
+        "search_hotels_or_destinations": "Hotels oder Reiseziele suchen...",
+        "destination": "Reiseziel",
+        "check_in": "Anreise",
+        "check_out": "Abreise",
+        "guests": "Gäste",
+        "search": "Suchen",
+
+        // Popular Destinations
+        "popular_destinations": "Beliebte Reiseziele",
+        "all_destinations": "Alle Reiseziele",
+
+        // Best Deals
+        "best_deals": "Beste Angebote",
+        "best_deal": "BESTES ANGEBOT",
+
+        // Hotel Card
+        "per_night": "pro Nacht",
+        "view_deal": "Angebot Ansehen",
+        "free_wifi": "Kostenloses WLAN",
+        "breakfast": "Frühstück",
+        "pool": "Pool",
+
+        // Reviews
+        "guest_reviews": "Gästebewertungen",
+        "write_review": "Bewertung Schreiben",
+        "no_reviews_yet": "Noch keine Bewertungen. Seien Sie der Erste!",
+
+        // Loyalty Program
+        "points": "Punkte",
+        "current_level": "Aktuelles Level",
+        "member": "Mitglied",
+        "points_to_next_level": "Punkte bis zum nächsten Level",
+        "your_benefits": "Ihre Vorteile",
+        "redeem_rewards": "Prämien Einlösen",
+
+        // Availability
+        "no_rooms_available": "Keine Zimmer verfügbar",
+        "limited_availability": "Begrenzte Verfügbarkeit",
+        "rooms_available": "Zimmer verfügbar",
+        "rooms_left": "Zimmer übrig! Jetzt buchen, um Ihren Aufenthalt zu sichern.",
+
+        // Social Proof
+        "just_booked": "Gerade Gebucht!",
+        "booked": "Gebucht",
+
+        // Travel Assistant
+        "travel_assistant": "Reiseassistent",
+        "hello_travel_assistant": "Hallo! Ich bin Ihr Reiseassistent. Wie kann ich Ihnen helfen, das perfekte Hotel zu finden?",
+
+        // Common
+        "loading": "Laden...",
+        "no_hotels_found": "Keine Hotels gefunden",
+        "try_adjusting_filters": "Versuchen Sie, Ihre Suchkriterien anzupassen",
+
+        // Missing Keys
+        "login": "Anmelden",
+        "logout": "Abmelden",
+        "sort_by": "Sortieren Nach",
+        "price_range": "Preisbereich",
+        "popular_hotels": "Beliebte Hotels",
+        "hotels_found": "Hotels gefunden",
+
+        // Loyalty Home
+        "your_loyalty_status": "Ihr Treueprogramm-Status",
+        "see_detail": "Details Anzeigen",
+        "points_available_desc": "Punkte für Rabatte und Prämien verfügbar.",
+        "hotel_in_destination": "Hotel an Ihrem Reiseziel",
+
+        // Feature: Reviews
+        "stars": "Sterne",
+        "share_experience_placeholder": "Teilen Sie Ihre Erfahrung...",
+        "submit_review": "Bewertung Senden",
+        "submitting": "Wird gesendet...",
+        "recent_reviews": "Neueste Bewertungen",
+        "anonymous": "Anonym",
+
+        // Feature: Availability
+        "last_updated": "Zuletzt aktualisiert:",
+        "room_types_availability": "Verfügbarkeit nach Zimmertyp:",
+        "left": "übrig",
+
+        // Home Page Specific
+        "search_button": "SUCHEN",
+        "filter_all": "Alle",
+        "price_range_label": "Preisbereich:",
+        "sort_by_label": "Sortieren Nach",
+        "sort_popular": "Beliebt",
+        "sort_price_low": "Preis: Aufsteigend",
+        "sort_price_high": "Preis: Absteigend",
+        "sort_name": "Name: A bis Z",
+        "flash_deals_title": "⚡ BLITZANGEBOTE!",
+        "popular_destinations_icon": "Beliebte Reiseziele 📍",
+        "hotel_in_destination_icon": "Hotel an Ihrem Reiseziel 🗺️",
+        "save_badge": "SPAREN",
+        "night": "/Nacht",
+        "reviews_count": "Bewertungen",
+
+        // Login Page
+        "welcome_back_title": "Hallo, Willkommen Zurück",
+        "login_subtitle": "Bitte melden Sie sich an, um fortzufahren",
+        "email_label": "E-Mail",
+        "password_label": "Passwort",
+        "login_button": "Anmelden",
+        "logging_in": "Anmeldung läuft...",
+        "create_account_button": "Konto Erstellen",
+        "back_to_home": "← Zurück zur Startseite",
+        "error_email_password_required": "E-Mail und Passwort sind erforderlich",
+        "error_login_failed": "Anmeldung fehlgeschlagen. Ungültige E-Mail oder Passwort.",
+
+        // Register Page
+        "all_fields_required": "Alle Felder sind erforderlich",
+        "account_created_success": "Konto erfolgreich erstellt!",
+        "register_failed": "Registrierung fehlgeschlagen",
+        "back": "Zurück",
+        "create_account_title": "Konto erstellen",
+        "create_account_subtitle": "Registrieren Sie sich für ein neues Konto",
+        "full_name_label": "Vollständiger Name",
+        "signup_button": "Registrieren",
+        "creating": "Wird erstellt...",
+        "already_have_account": "Haben Sie bereits ein Konto? Anmelden",
+
+        // Hotel Detail
+        "hotel_not_found": "Hotel nicht gefunden",
+        "coordinates_available": "Koordinaten verfügbar",
+        "flash_sale": "BLITZVERKAUF",
+        "remove_from_favorite": "Aus Favoriten entfernen",
+        "add_to_favorite": "Zu Favoriten hinzufügen",
+        "share": "Teilen",
+        "link_copied": "Link in die Zwischenablage kopiert",
+        "hotel_removed_favorite": "Hotel aus Favoriten entfernt",
+        "hotel_saved_favorite": "Hotel zu Favoriten hinzugefügt",
+        "share_text": "Schauen Sie sich das Hotel {{hotelName}} in {{city}} an",
+        "guest_reviews_count": "Gästebewertungen",
+        "rating_label": "Bewertung",
+        "normal_price": "Normalpreis",
+        "save_percentage": "SPAREN",
+        "per_night_tax": "pro Nacht (inkl. Steuern und Service)",
+        "free_cancellation": "Kostenlose Stornierung 24 Stunden",
+        "breakfast_wifi_included": "Frühstück und WLAN inklusive",
+        "book_now_button": "Jetzt Buchen",
+        "description_title": "Beschreibung",
+        "read_more": "Mehr lesen",
+        "show_less": "Weniger anzeigen",
+        "featured_facilities": "Ausgewählte Einrichtungen",
+        "location_title": "Standort",
+        "coordinates_not_available": "Koordinaten nicht verfügbar, Karte basierend auf der Stadt wird angezeigt.",
+        "guest_reviews_title": "Gästebewertungen",
+        "other_hotels_in": "Andere Hotels in",
+
+        // Booking Page
+        "guest_details": "Gästedaten",
+        "guest_information": "Gästeinformationen",
+        "select_payment_method": "Zahlungsmethode Wählen",
+        "review_booking": "Buchung Überprüfen",
+        "confirmation": "Bestätigung",
+        "pay_now": "Jetzt Bezahlen",
+        "you_will_earn": "Sie erhalten",
+        "booking_ready_msg": "Ihre Buchungsdetails sind bereit. Überprüfen Sie vor der Zahlung.",
+        "complete_booking_details": "Buchungsdetails Vervollständigen",
+        "booking_successful": "Buchung erfolgreich erstellt. Danke!",
+        "booking_failed": "Bei der Erstellung der Buchung ist ein Fehler aufgetreten.",
+        "booking_failed_client": "Buchung konnte nicht in der Datenbank gespeichert werden. (Lokal gespeichert)",
+        "please_complete_data": "Bitte vervollständigen Sie die Buchungsdetails korrekt.",
+        "processing": "Wird verarbeitet...",
+        "pay_with": "{{amount}} mit {{method}} bezahlen",
+        "complete_data_to_pay": "Daten zum Bezahlen Vervollständigen",
+        "booking_summary": "Ihre Buchungsübersicht",
+        "price_per_night": "Preis pro Nacht",
+        "nights": "Nächte",
+        "rooms": "Zimmer",
+        "payment_method": "Zahlungsmethode",
+        "total_estimated": "Gesamt (geschätzt)",
+        "total_estimation_note": "* Geschätzter Gesamtpreis basierend auf Preis pro Nacht, Anzahl der Nächte ({{nights}}) und Zimmer ({{rooms}}).",
+        "validation_name": "Vollständiger Name ist erforderlich",
+        "validation_email": "E-Mail ist erforderlich",
+        "validation_checkin": "Anreisedatum ist erforderlich",
+        "validation_checkout": "Abreisedatum ist erforderlich",
+        "validation_checkout_after": "Abreisedatum muss nach Anreisedatum sein",
+        "validation_rooms": "Mindestens 1 Zimmer",
+        "room_count_label": "Anzahl der Zimmer",
+        "room_count_helper": "Anzahl der gebuchten Zimmer (mindestens 1)",
+
+        // Deals Page
+        "special_deals_title": "Sonderangebote 🎉",
+        "special_deals_subtitle": "Exklusive Angebote und zeitlich begrenzte Aktionen nur für Sie.",
+        "tab_all_deals": "Alle Angebote",
+        "tab_flash_sales": "Blitzverkäufe",
+        "tab_package_deals": "Paketangebote",
+        "tab_last_minute": "Last Minute",
+        "offers_count": "Angebote",
+        "no_deals_available": "Derzeit keine Angebote verfügbar. Schauen Sie später wieder vorbei!",
+
+        // Favorites Page
+        "my_favorites": "Meine Favoriten",
+        "no_favorites": "Noch keine Favoriten",
+        "save_favorites_desc": "Speichern Sie Ihre Lieblingshotels von der Detailseite, um sie später zu vergleichen oder zu buchen.",
+        "explore_hotels": "Hotels Erkunden",
+        "see_details": "Details Anzeigen",
+        "remove_button_label": "Entfernen",
+
+        // Profile Page
+        "user_profile": "Benutzerprofil",
+        "admin_role_label": "Administrator",
+        "regular_user_label": "Regulärer Benutzer",
+        "edit_profile": "Profil Bearbeiten",
+        "logout_account": "Abmelden",
+        "loyalty_program_status": "Treueprogramm und Status",
+        "your_level": "Ihr Level",
+        "points_balance": "Punktestand",
+        "see_loyalty_details": "Treuedetails Anzeigen",
+        "quick_account_actions": "Schnelle Kontoaktionen",
+        "view_booking_history": "Buchungsverlauf Anzeigen",
+        "check_favorites": "Favoriten Prüfen",
+        "search_latest_deals": "Neueste Angebote Suchen",
+        "quick_logout": "Schnell Abmelden",
+
+        // Search Results Page
+        "search_results_title": "Suchergebnisse",
+        "filters_title": "Filter",
+        "amenities_label": "Einrichtungen",
+        "sort_rating": "Beste Bewertung",
+
+        // Your Booking Page
+        your_booking_title: "Ihre Buchung",
+        no_bookings_found: "Kein Buchungsverlauf gefunden.",
+        back_to_home: "Zurück zur Startseite",
+        check_in_out_label: "Check-in/Check-out Daten",
+        booking_method_label: "Zahlungsmethode",
+        booking_total_label: "Gesamtzahlung",
+        print_pdf_summary: "PDF-Zusammenfassung drucken",
+
+        // Footer
+        "footer_company_name": "BookingAsik.com",
+        "footer_company_desc": "Die vertrauenswürdige Hotelbuchungsplattform in Indonesien. Wir bieten Tausende von Hoteloptionen zu den besten Preisen, verifizierten Bewertungen und einem einfachen und sicheren Buchungsprozess.",
+        "footer_company_section": "Unternehmen",
+        "footer_about_us": "Über Uns",
+        "footer_careers": "Karriere",
+        "footer_blog": "Blog",
+        "footer_press": "Presse",
+        "footer_partners": "Partner",
+        "footer_support_section": "Support",
+        "footer_help_center": "Hilfezentrum",
+        "footer_faq": "FAQ",
+        "footer_privacy_policy": "Datenschutzrichtlinie",
+        "footer_terms": "Geschäftsbedingungen",
+        "footer_security": "Sicherheit",
+        "footer_contact_section": "Kontakt",
+        "footer_office_address": "Büroadresse",
+        "footer_address_line1": "Jl. Sudirman Nr. 123, Etage 15",
+        "footer_address_line2": "Jakarta Zentral 10220, Indonesien",
+        "footer_phone": "Telefon",
+        "footer_email": "E-Mail",
+        "footer_hours": "Öffnungszeiten",
+        "footer_weekday_hours": "Mo - Fr: 08:00 - 22:00",
+        "footer_weekend_hours": "Sa - So: 09:00 - 21:00",
+        "footer_copyright": "Alle Rechte vorbehalten.",
+        "footer_cookie_policy": "Cookie-Richtlinie",
+        "footer_service_terms": "Nutzungsbedingungen",
+
+        // Attractions
+        "attractions": "Sehenswürdigkeiten",
+        "attractions_hero_title": "Entdecken Sie Erstaunliche Sehenswürdigkeiten",
+        "attractions_hero_subtitle": "Entdecken Sie Indonesiens schönste Reiseziele und buchen Sie Ihr Abenteuer",
+        "attractions_search_placeholder": "Sehenswürdigkeiten, Städte oder Aktivitäten suchen...",
+        "attractions_filter_city": "Nach Stadt Filtern",
+        "attractions_filter_category": "Kategorie",
+        "attractions_found": "{{count}} Sehenswürdigkeiten gefunden",
+        "no_attractions_found": "Keine Sehenswürdigkeiten gefunden",
+        "attraction_category_temple": "Tempel",
+        "attraction_category_nature": "Natur",
+        "attraction_category_heritage": "Kulturerbe",
+        "attraction_category_culture": "Kultur",
+        "attraction_category_landmark": "Wahrzeichen",
+        "attraction_category_theme_park": "Freizeitpark",
+        "attraction_category_beach": "Strand",
+        "attraction_category_adventure": "Abenteuer",
+        "attraction_free_entry": "Freier Eintritt",
+        "attraction_view_details": "Details Ansehen",
+        "attraction_not_found": "Sehenswürdigkeit nicht gefunden",
+        "attraction_removed_favorite": "Sehenswürdigkeit aus Favoriten entfernt",
+        "attraction_saved_favorite": "Sehenswürdigkeit zu Favoriten hinzugefügt",
+        "attraction_top_rated": "Bestbewertet",
+        "attraction_duration": "Dauer",
+        "attraction_opening_hours": "Öffnungszeiten",
+        "attraction_amenities": "Einrichtungen und Services",
+        "attraction_book_ticket": "Tickets Buchen",
+        "attraction_per_person": "pro Person",
+        "attraction_visit_date": "Besuchsdatum",
+        "attraction_select_date": "Datum auswählen",
+        "attraction_ticket_count": "Anzahl der Tickets",
+        "attraction_subtotal": "Zwischensumme",
+        "attraction_login_to_book": "Bitte melden Sie sich an, um diese Sehenswürdigkeit zu buchen"
+    }
+};

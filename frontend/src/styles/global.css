@@ -1,0 +1,953 @@
+/* --------------------------------------------------
+ * 🎨 CSS VARIABLES - Enhanced (Booking.com Style)
+ * -------------------------------------------------- */
+:root {
+  /* Colors - Booking.com Inspired */
+  --color-primary: #003b95;
+  /* Booking.com Blue */
+  --color-primary-dark: #002244;
+  /* Deeper Blue */
+  --color-primary-light: #e6f0ff;
+  /* Very Light Blue for background/hover */
+  --color-accent: #ff6b00;
+  /* Booking.com Orange */
+  --color-success: #00b289;
+  /* Green for success */
+  --color-warning: #ffb100;
+  /* Yellow for warning */
+  --color-danger: #ff385c;
+  /* Red for danger */
+
+  /* Light Theme - Default/Fallback Variables (Variabel Semantik) */
+  --color-bg-page: #ffffff;
+  --color-bg-surface: #ffffff;
+  /* Card/Modal background */
+  --color-text-main: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-border-main: rgba(0, 0, 0, 0.1);
+  --color-border-input: #e1e1e1;
+
+  /* Component Overrides (Light Theme) */
+  --color-navbar-bg: rgba(255, 255, 255, 0.95);
+  --color-navbar-border: rgba(0, 0, 0, 0.1);
+  --color-navbar-scrolled-bg: rgba(255, 255, 255, 1);
+  --color-search-card-bg: rgba(255, 255, 255, 0.95);
+  --color-loyalty-bg: #007bff;
+  /* Biru terang untuk status loyalty */
+  --color-flashsale-start: #ff4500;
+  --color-flashsale-end: #ff8c00;
+
+  /* Spacing and Sizing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --navbar-height: 5rem;
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1rem;
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.25);
+}
+
+/* --------------------------------------------------
+ * 🌙 DARK MODE THEME APPLICATION (Override Variabel)
+ * -------------------------------------------------- */
+body.dark,
+[data-theme="dark"] {
+  /* Dark Theme Palette */
+  --color-dark-bg: #0d0d0d;
+  --color-dark-text: #ffffff;
+  --color-dark-text-secondary: #cccccc;
+
+  /* Apply Dark Theme Variables (OVERRIDE SEMANTIK) */
+  --color-bg-page: var(--color-dark-bg);
+  --color-bg-surface: #1a1a1a;
+  /* Slightly lighter dark for contrast/elevation */
+  --color-text-main: var(--color-dark-text);
+  --color-text-secondary: var(--color-dark-text-secondary);
+  --color-border-main: rgba(255, 255, 255, 0.1);
+  --color-border-input: rgba(255, 255, 255, 0.2);
+
+  /* Component Overrides (Dark Theme) */
+  --color-navbar-bg: rgba(15, 15, 15, 0.95);
+  --color-navbar-border: rgba(255, 255, 255, 0.1);
+  --color-navbar-scrolled-bg: rgba(10, 10, 10, 1);
+  --color-search-card-bg: rgba(30, 30, 30, 0.95);
+  --color-loyalty-bg: #0056b3;
+}
+
+/* --------------------------------------------------
+ * 🔄 RESET & GLOBAL STYLES
+ * -------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--color-bg-page);
+  color: var(--color-text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 0;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+/* Accessibility: Focus Visible Styling */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* Reducing animation for sensitive users */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------------------------------------
+ * 🎯 ANIMATION KEYFRAMES (No Change)
+ * -------------------------------------------------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --------------------------------------------------
+ * 🌐 NAVBAR & HEADER COMPONENTS
+ * -------------------------------------------------- */
+.navbar-glass {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: var(--color-navbar-bg);
+  border-bottom: 1px solid var(--color-navbar-border);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  padding: 0 2rem;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.navbar-scrolled {
+  background: var(--color-navbar-scrolled-bg);
+  box-shadow: var(--shadow-md);
+  padding-block: 0.5rem;
+}
+
+.navbar-pro-menu a {
+  color: var(--color-text-main);
+  margin-right: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navbar-pro-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width var(--transition-fast);
+}
+
+.navbar-pro-menu a:hover::after {
+  width: 100%;
+}
+
+.navbar-pro-menu a:hover {
+  color: var(--color-primary);
+}
+
+.navbar-glass .MuiToolbar-root {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  height: var(--navbar-height);
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar-menu button,
+.navbar-menu a {
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+/* --------------------------------------------------
+ * 🏠 HERO SECTION
+ * -------------------------------------------------- */
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: rgb(255, 255, 255);
+  padding: 6rem 2rem 9rem;
+  text-align: center;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+  border-radius: 0;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhvdGVsfGVufDB8fDB8fHww') center/cover;
+  opacity: 0.8;
+  animation: fadeIn 2s ease-in-out;
+  /* **[PENYESUAIAN KRITIS]** Overlay hitam ditingkatkan dari 0.25 menjadi 0.40 */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.40);
+  border-radius: 0;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+/* **[PENYESUAIAN VISIBILITAS MAKSIMAL - JUDUL UTAMA H1]** */
+.hero h1 {
+  color: #FFFFFF;
+  /* Putih Solid */
+  font-size: 3rem;
+  font-weight: 900;
+  /* Lebih tebal */
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  /* Shadow yang sangat tegas, hitam dan biru, agar teks menonjol dari latar belakang */
+  text-shadow:
+    0 0 5px rgba(0, 0, 0, 1),
+    0 0 15px rgba(0, 59, 149, 0.7),
+    0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* **[PENYESUAIAN VISIBILITAS TEKS P]** */
+.hero p {
+  color: #F8F8F8;
+  /* Sedikit off-white */
+  font-size: 1.25rem;
+  opacity: 1;
+  font-weight: 600;
+  /* Lebih tebal */
+  margin-bottom: 3rem;
+  /* Shadow hitam yang halus */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* --------------------------------------------------
+ * 🔍 SEARCH & FORM COMPONENTS (Diposisikan di tengah Hero)
+ * -------------------------------------------------- */
+.search-card {
+  background: var(--color-search-card-bg);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+
+  /* PERBAIKAN FOKUS: Menyesuaikan margin negatif */
+  margin: -6rem auto 2rem;
+  max-width: 1000px;
+  position: relative;
+  z-index: 10;
+  animation: slideInLeft 1s ease-out 0.6s both;
+  border: 1px solid var(--color-border-main);
+  transition: all var(--transition-medium);
+}
+
+.search-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.search-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-input-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-main);
+  font-size: 0.9rem;
+}
+
+.search-input {
+  padding: 1rem;
+  border: 2px solid var(--color-border-input);
+  border-radius: var(--border-radius-sm);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+  background: var(--color-bg-surface);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 59, 149, 0.1);
+}
+
+.search-button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  height: fit-content;
+  animation: pulse 2s infinite;
+}
+
+.search-button:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* --------------------------------------------------
+ * 👑 LOYALTY STATUS & FLASH SALE COMPONENTS
+ * -------------------------------------------------- */
+.loyalty-section,
+.flashsale-section {
+  max-width: 1000px;
+  margin: 0 auto var(--spacing-lg);
+  padding: 0 var(--spacing-md);
+  position: relative;
+  z-index: 9;
+}
+
+.loyalty-card {
+  background: var(--color-loyalty-bg);
+  color: white;
+  padding: var(--spacing-lg);
+  border-radius: 0;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.loyalty-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.loyalty-info strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.loyalty-info button {
+  background: white;
+  color: var(--color-primary);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loyalty-points {
+  text-align: right;
+}
+
+.loyalty-points span {
+  font-size: 2rem;
+  font-weight: 800;
+  display: block;
+}
+
+.flashsale-card {
+  background: linear-gradient(90deg, var(--color-flashsale-start), var(--color-flashsale-end));
+  color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.flashsale-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.flashsale-header span {
+  margin-left: var(--spacing-sm);
+}
+
+.flashsale-timer {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.flashsale-timer div {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0.8rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 700;
+}
+
+/* --------------------------------------------------
+ * 🗺️ LEAFLET MAP & SECTION (No Change)
+ * -------------------------------------------------- */
+.map-section {
+  margin: 4rem 0;
+  padding: 0 1rem;
+}
+
+.map-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 30rem;
+  border-radius: var(--border-radius-lg);
+  margin-top: 1rem;
+  box-shadow: var(--shadow-lg);
+  z-index: 1;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  animation: fadeIn 1.5s ease-out 0.4s both;
+}
+
+.leaflet-container:hover {
+  transform: scale(1.01);
+  box-shadow: var(--shadow-xl);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-lg);
+}
+
+.leaflet-default-icon-path {
+  background-image: none !important;
+}
+
+/* --------------------------------------------------
+ * 🏨 HOTEL CARDS & LISTING GRID (No Change)
+ * -------------------------------------------------- */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 3rem 0 2rem;
+  text-align: center;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 var(--spacing-md) var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hotel-card {
+  background: var(--color-bg-surface);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-medium);
+  cursor: pointer;
+  animation: fadeInUp 0.8s ease-out both;
+  position: relative;
+  border: 1px solid var(--color-border-main);
+}
+
+.hotel-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.hotel-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hotel-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.hotel-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.hotel-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.hotel-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hotel-card-image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.hotel-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-medium);
+}
+
+.hotel-card:hover .hotel-card-image {
+  transform: scale(1.05);
+}
+
+.hotel-badge {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  background: var(--color-accent);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+  animation: bounce 2s infinite;
+}
+
+.hotel-card-content {
+  padding: var(--spacing-lg);
+}
+
+.hotel-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-main);
+}
+
+.hotel-card-location {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.hotel-card-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.rating-badge {
+  background: var(--color-success);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.rating-text {
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.hotel-card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-main);
+}
+
+.price-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.price-night {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.book-button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.book-button:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* --------------------------------------------------
+ * 🌙 DARK MODE COMPONENT FIXES (No Change)
+ * -------------------------------------------------- */
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, var(--color-primary-dark), #001a33);
+}
+
+[data-theme="dark"] .loyalty-card {
+  background: var(--color-loyalty-bg);
+  border-color: #003b95;
+  color: white;
+}
+
+/* --------------------------------------------------
+ * 📱 RESPONSIVE DESIGN
+ * -------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .search-card {
+    /* PERUBAHAN MOBILE: Menyesuaikan margin negatif pada mobile */
+    margin: -4rem var(--spacing-md) 1rem;
+    padding: var(--spacing-lg);
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .loyalty-card,
+  .flashsale-card {
+    margin-left: var(--spacing-md);
+    margin-right: var(--spacing-md);
+  }
+
+  .loyalty-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .loyalty-points {
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: var(--spacing-sm);
+  }
+
+  .flashsale-header {
+    font-size: 1.2rem;
+  }
+
+  .grid-cards {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md) 2rem;
+  }
+
+  .navbar-glass {
+    padding: 0 var(--spacing-md);
+  }
+
+  .navbar-pro-menu a {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hotel-card-content {
+    padding: var(--spacing-md);
+  }
+
+  .price-amount {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: var(--spacing-xl) var(--spacing-md) 6rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .search-button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .hotel-card-price {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+  }
+}
+
+/* --------------------------------------------------
+ * 🎯 UTILITY CLASSES (No Change)
+ * -------------------------------------------------- */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.transition-all {
+  transition: all var(--transition-fast);
+}
+
+.hover-lift {
+  transition: all var(--transition-medium);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.shadow-hover {
+  transition: all var(--transition-medium);
+}
+
+.shadow-hover:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-primary-light) 25%, #e0e0e0 50%, var(--color-primary-light) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+  border-radius: var(--border-radius-sm);
+}
+
+[data-theme="dark"] .skeleton {
+  background: linear-gradient(90deg, #1f1f1f 25%, #2a2a2a 50%, #1f1f1f 75%);
+}
+
+/* Button loading state */
+.btn-loading {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

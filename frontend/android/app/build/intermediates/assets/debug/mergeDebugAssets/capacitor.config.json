@@ -1,0 +1,11 @@
+{
+	"appId": "com.bookingasik.app",
+	"appName": "BookingAsik",
+	"webDir": "build",
+	"server": {
+		"cleartext": true
+	},
+	"android": {
+		"allowMixedContent": true
+	}
+}

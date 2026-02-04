@@ -1,0 +1,54 @@
+{
+  "name": "hotel-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env BROWSER=none react-app-rewired start",
+    "build": "react-app-rewired build"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^5.18.0",
+    "@mui/material": "^5.18.0",
+    "@mui/x-date-pickers": "^5.0.20",
+    "@react-google-maps/api": "^2.20.7",
+    "@react-oauth/google": "^0.8.1",
+    "axios": "^1.13.2",
+    "date-fns": "^2.30.0",
+    "framer-motion": "^12.23.25",
+    "html2canvas": "^1.4.1",
+    "i18next": "^23.16.8",
+    "jspdf": "^3.0.4",
+    "jwt-decode": "^4.0.0",
+    "leaflet": "^1.9.4",
+    "mapbox-gl": "^3.16.0",
+    "maplibre-gl": "^3.6.2",
+    "qrcode.react": "^4.2.0",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.25.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.5.0",
+    "react-leaflet": "^4.2.1",
+    "react-map-gl": "^7.1.9",
+    "react-router-dom": "^6.30.2",
+    "react-scripts": "^5.0.1",
+    "swiper": "^10.3.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "react-app-rewired": "^2.2.1"
+  }
+}

@@ -1,0 +1,26 @@
+html, body, #root {
+  height: 100%;
+}
+body {
+  background: #f6f8fb;
+  font-family: 'Inter', sans-serif;
+}
+.app-container {
+  padding: 24px;
+}
+.hero {
+  background: linear-gradient(90deg, rgba(25,118,210,0.06), rgba(66,165,245,0.04));
+  border-radius: 12px;
+  padding: 28px;
+}
+.search-card {
+  margin-top: -36px;
+  position: relative;
+  z-index: 2;
+}
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 18px;
+}
